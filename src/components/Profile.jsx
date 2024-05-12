@@ -2,7 +2,7 @@ const Profile = ({ name, tag, location, image, stats }) => {
   const { followers, views, likes } = stats;
   return (
     <>
-      <div>
+      <div className={css.userCard}>
         <img src={image} alt="User avatar" />
         <div>
           <p>{name}</p>
