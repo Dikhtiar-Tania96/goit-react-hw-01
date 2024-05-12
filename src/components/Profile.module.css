@@ -1,3 +1,52 @@
 .userCard{
-    background-color: green;
+    background-color: #FFFAFA;
+    border: 3px solid black;
+    border-radius: 15px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.userPhoto{
+    background-color: #696969;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+}
+
+.userProfile{
+    padding: 10px;
+}
+
+
+.userName{
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+.userText{
+    color: #808080	;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.userStats{
+    height: auto;
+    display: flex;
+    background-color: #D3D3D3;
+
+
+}
+
+.userStatsList{
+    display: block;
+    border: 3px solid #808080;
+    width: 300px;
+    padding: 10px;
+    margin: 50px;
 }
