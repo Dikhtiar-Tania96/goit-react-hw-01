@@ -1,25 +1,16 @@
-import './App.css';
+import "./App.css";
+import Profile from "./components/Profile";
 
-const Profile = (props) => {
-  return <div>
-    <h2>{props.name}</h2>
-    <p>{props.tag}</p>
-    <p>{props.location}</p>
-    <img/>
-    <div>
-      <p>{props.stats}</p>
-      <p>{props.stats}</p>
-      <p>{props.stats}</p>
-    </div>
-  </div>
-}
-
-function App(){
+function App() {
   return (
-    <Profile 
-    
+    <Profile
+      name={userData.username}
+      tag={userData.tag}
+      location={userData.location}
+      image={userData.avatar}
+      stats={userData.stats}
     />
-  )
+  );
 }
 
-export default App
+export default App;
