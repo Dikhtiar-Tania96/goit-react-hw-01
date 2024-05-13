@@ -1,11 +1,6 @@
 .userCard{
     background-color: #FFFAFA;
     border: 3px solid black;
-    border-radius: 15px;
-    /* display: block; */
-    /* align-items: center;
-    justify-content: center;
-    position: relative; */
 }
 
 .userPhoto{
