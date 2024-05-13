@@ -2,10 +2,10 @@
     background-color: #FFFAFA;
     border: 3px solid black;
     border-radius: 15px;
-    display: block;
-    align-items: center;
+    /* display: block; */
+    /* align-items: center;
     justify-content: center;
-    position: relative;
+    position: relative; */
 }
 
 .userPhoto{
@@ -13,7 +13,7 @@
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    margin: 50px;
+    margin: 30px;
 }
 
 .userProfile{
@@ -33,20 +33,28 @@
     color: #808080	;
     font-size: 20px;
     margin-bottom: 5px;
+    margin-top: 10px;
 }
 
 .userStats{
-    height: auto;
+    color: black;
+    font-size: 30px;
+    margin: 0;
     display: flex;
-    background-color: #D3D3D3;
-
+    padding: 0;
 
 }
 
 .userStatsList{
-    display: block;
-    border: 3px solid #808080;
-    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 2px solid #808080;
+    background-color: #C0C0C0;
+    width: 120px;
     padding: 10px;
-    margin: 50px;
+}
+
+.userListBold{
+    font-weight: bold;
 }
