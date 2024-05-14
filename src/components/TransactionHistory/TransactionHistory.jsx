@@ -1,29 +1,27 @@
-function TransactionHistory() {
-  return (
-    <>
-      <table>
-        <thead>
-          <tr>
-            <th>Type</th>
-            <th>Amount</th>
-            <th>Currency</th>
-          </tr>
-        </thead>
+import css from "./TransactionHistory.module.css";
 
-        <tbody>
-          <tr>
-            <td>Invoice</td>
-            <td>125</td>
-            <td>USD</td>
-          </tr>
-          <tr>
-            <td>Withdrawal</td>
-            <td>85</td>
-            <td>USD</td>
-          </tr>
-        </tbody>
-      </table>
-    </>
+function TransactionHistory({ items }) {
+  return (
+    <table>
+      <thead className={css.table}>
+        <tr>
+          <th className={css.text}>Type</th>
+          <th className={css.text}>Amount</th>
+          <th className={css.text}>Currency</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        {items.map((item) => (
+            <tr key={item.key}>
+              <td className={css.tableText}>{item.type}</td>
+              <td className={css.tableText}>{item.amount}</td>
+              <td className={css.tableText}>{item.currency}</td>
+            </tr>
+          
+        ))}
+      </tbody>
+    </table>
   );
 }
 

@@ -1,0 +1,16 @@
+.table {
+  background-color: lightslategray;
+  color: black;
+  width: 140px;
+}
+
+.text {
+  background-color: grey;
+  width: 110px;
+}
+
+.tableText {
+  text-transform: capitalize;
+  font-weight: 500;
+  background-color: rgb(150, 131, 204);
+}
